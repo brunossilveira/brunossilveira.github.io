@@ -1,0 +1,60 @@
+---
+---
+
+// Breakpoints
+$large-breakpoint: 64em !default;
+$medium-breakpoint: 42em !default;
+
+// Headers
+$header-heading-color: #fdfdfa;
+$header-bg-color: #5c7598;
+$header-bg-color-secondary: #155799 !default;
+
+// Text
+$section-headings-color: #159957 !default;
+$body-text-color: #606c71 !default;
+$body-link-color: #1e6bb8 !default;
+$blockquote-text-color: #819198 !default;
+
+// Code
+$code-bg-color: #f3f6fa !default;
+$code-text-color: #567482 !default;
+
+// Borders
+$border-color: #dce6f0 !default;
+$table-border-color: #e9ebec !default;
+$hr-border-color: #eff0f1 !default;
+
+@import '{{ site.theme }}';
+
+i,
+a {
+	&.small { font-size: 2em; }
+	&.medium { font-size: 3em; }
+	&.large { font-size: 5em; }
+}
+
+img {
+	&.main-picture {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+		transform: rotate(30deg);
+	}
+}
+
+.page-header {
+	background-color: $header-bg-color;
+	background-image: none;
+}
+
+.social-media {
+	a {
+		padding: 8px;
+	}
+
+	i {
+	 color: #fdfdfa;
+	}
+}
+
