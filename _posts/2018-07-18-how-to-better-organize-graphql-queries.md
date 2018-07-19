@@ -5,7 +5,9 @@ date:   2018-07-18
 categories: development rails ruby graphql
 ---
 
-# Intro
+# How to better organize your graphql queries on Ruby on Rails
+
+## Intro
 
 I'm getting started learning about GraphQL and it's concepts, because we decided at work to migrate some REST endpoints we have. It seems really straightforward and simple, but I'm still just getting started studying it and thought about sharing a few ideias for those who might end up having the same problems that I had.
 
@@ -14,7 +16,7 @@ I was migrating some REST endpoints to GraphQL at work, using [graphql-ruby](htt
 Although the documentation is from an old version, everything was going really well. The gem makes it easy to create the Types and Queries.
 After you setup the gem and run the installer command, `app/graphql/query_type.rb` is generated so you can create your queries.
 
-# My first steps
+## My first steps
 
 I'm not going to get into the concepts of GraphQL and also how to define Types. Later I will also write about how to better organize your Types, [let me know](https://twitter.com/brunossilveira) if you're interested.
 
@@ -45,13 +47,13 @@ class Types::QueryType < Types::BaseObject
     Product.all
   end
 
-  def workout(id:)
+  def product(id:)
     Product.find(id)
   end
 end
 ```
 
-# The problem
+## The problem
 
 I quickly realized that by the end of it, after I finished adding all queries needed, this file would become giant.
 So I thought for a while how I could make it better organized. I searched the documentation but could not find anything helpful for this problem. I even found [this article](https://m.alphasights.com/graphql-ruby-clean-up-your-query-type-d7ab05a47084) that solved my problem but when it was written the gem was in a different version. I tried to read the code and port the solution to the new version without success.
@@ -75,7 +77,7 @@ module Products
       Product.all
     end
 
-    def workout(id:)
+    def product(id:)
       Product.find(id)
     end
   end
@@ -108,10 +110,10 @@ That's all! Simple right?
 
 Of course that it doesn't look that much better with just a few queries but think about the application you are currently working on and how many endpoints it has. Think about how `QueryType` would look like if you added all queries into a single file. Probably not the best.
 
-# A few considerations
+## A few considerations
 
 I noticed that this messes up a bit with the namespaces of the gem, but apart from that and as long as you use the full name of it's classes, everything will work as expected.
 
-# That's all
+## That's all
 
 I would love to hear if you have suggestions or a better solution. You can always find me on [twitter](https://twitter.com/brunossilveira) if you have any ideias/suggestions you want to share.

@@ -142,3 +142,8 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 42em) { .blog .left-col { display: none; } }
+@media screen and (max-width: 42em) { .blog .mid-col { padding: 16px; width: 100%; } }
+@media screen and (max-width: 42em) { .blog ul li.post .post-info{ display: none; } }
+@media screen and (max-width: 42em) { section.blog-history ul { padding-left: 0; } }
