@@ -1,20 +1,19 @@
 ---
 ---
-
 // Breakpoints
 $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 
 // Headers
-$header-heading-color: #fdfdfa;
-$header-bg-color: #5c7598;
-$header-bg-color-secondary: #155799 !default;
+$header-heading-color: #606c71;
+$header-bg-color: #ffffff;
+$header-bg-color-secondary: #ffffff !default;
 
 // Text
-$section-headings-color: #159957 !default;
+$section-headings-color: #606c71 !default;
 $body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
-$blockquote-text-color: #819198 !default;
+$body-link-color: #606c71 !default;
+$blockquote-text-color: #1e6bb8 !default;
 
 // Code
 $code-bg-color: #f3f6fa !default;
@@ -23,13 +22,42 @@ $code-text-color: #567482 !default;
 // Borders
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
-$hr-border-color: #eff0f1 !default;
+$hr-border-color: #dce6f0 !default;
 
 @import '{{ site.theme }}';
 
 body {
 	height:100%;
-	background-color: #f7f0c7;
+	margin: 0;
+}
+
+.page-header {
+	margin-left: auto;
+  margin-right: auto;
+	border-bottom: solid 1px #dce6f0;
+  padding: 2rem 3rem;
+	max-width: 1280px;
+	margin-bottom: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	font-weight: 500;
+	font-size: x-large;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.main-content, .blog {
+	padding: 0;
+	max-width: 1280px;
+	margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 5rem;
 }
 
 i,
@@ -39,82 +67,22 @@ a {
 	&.large { font-size: 5em; }
 }
 
-.container {
-	//position: relative;
-	//min-height: 100%;
-}
-
-img {
-	&.main-picture {
-		width: 200px;
-		height: 200px;
-		border-radius: 100%;
-		transform: rotate(30deg);
-	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	&.text-right {
-		text-align: right;
-	}
-}
-
-.page-header {
-	background-color: $header-bg-color;
-	background-image: none;
-}
-
 .social-media {
 	a {
-		padding: 8px;
-	}
-
-	i {
-		color: #fdfdfa;
+		padding: 6px;
 	}
 }
-
-.main-content {
-	h1,
-	h3{
-		color: $header-bg-color;
-	}
-}
-
 
 footer {
-	color: $header-bg-color;
 	text-align: center;
-
-	i {
-		color: $header-bg-color !important;
-	}
-}
-
-.centered {
-	text-align: center;
-	color: #5c7598;
-}
-
-.blog .left-col {
-	position: fixed;
-	height: 100%;
-}
-
-.blog .mid-col {
-	padding: 5rem 6rem;
-	position: absolute;
-	right: 0;
-	min-height: 100%;
-	width: 68%;
+	max-width: 1280px;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 .blog ul {
 	list-style: none;
+	padding: 0;
 
 	li {
 		&.post {
