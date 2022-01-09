@@ -2,7 +2,7 @@
 layout: blog
 title:  "How to better organize your graphql queries on Ruby on Rails"
 date:   2018-07-18
-categories: development rails ruby graphql
+categories: graphql
 ---
 
 # How to better organize your graphql queries on Ruby on Rails
