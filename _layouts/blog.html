@@ -20,7 +20,6 @@
 				<a href="{{ site.social.github }}"><i class="fi-social-github small"></i></a>
 				<a href="{{ site.social.instagram }}"><i class="fi-social-instagram small"></i></a>
 				<a href="{{ site.social.twitter }}"><i class="fi-social-twitter small"></i></a>
-				<a href="{{ site.social.blog }}"><i class="fi-rss small"></i></a>
 				<a href="mailto:{{ site.social.email }}"><i class="fi-mail small"></i></a>
 			</span>
 		</header>
@@ -29,13 +28,24 @@
 			{{ content }}
 		</section>
 
+		<section class="newsletter-form" role="main">
+			<h2>There is more where that came from</h2>
+			<h4>Drop your email here and don't miss on anything.</h4>
+			<form action="{{site.mailchimp-list}}" method="post" target="_blank" novalidate>
+				<div class="mc-field-group">
+					<input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on">
+					<input type="submit" value="Subscribe" name="subscribe" class="heart">
+				</div>
+			</form>
+			<p class="spam">I promise I won't spam your inbox. Unsubscribe at any time.</p>
+		</section>
+
 		<footer>
 			<div class="social-media">
 				<a href="{{ site.social.linkedin }}"><i class="fi-social-linkedin small"></i></a>
 				<a href="{{ site.social.github }}"><i class="fi-social-github small"></i></a>
 				<a href="{{ site.social.instagram }}"><i class="fi-social-instagram small"></i></a>
 				<a href="{{ site.social.twitter }}"><i class="fi-social-twitter small"></i></a>
-				<a href="{{ site.social.blog }}"><i class="fi-rss small"></i></a>
 				<a href="mailto:{{ site.social.email }}"><i class="fi-mail small"></i></a>
 			</div>
 		</footer>
