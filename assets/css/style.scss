@@ -65,6 +65,13 @@ a {
 	&.small { font-size: 2em; }
 	&.medium { font-size: 3em; }
 	&.large { font-size: 5em; }
+
+}
+
+.blog {
+	a {
+		color: #c4a459;
+	}
 }
 
 .social-media {
@@ -146,6 +153,7 @@ footer {
 	}
 }
 
+@media screen and (max-width: 42em) { body { padding: 16px !important; } }
 @media screen and (max-width: 42em) { .blog .left-col { display: none; } }
 @media screen and (max-width: 42em) { .blog .mid-col { padding: 16px; width: 100%; } }
 @media screen and (max-width: 42em) { .blog ul li.post .post-info{ display: none; } }
