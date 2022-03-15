@@ -5,6 +5,8 @@ date:   2022-01-09
 categories: ruby
 ---
 
+# Is Ruby a good first language to learn?
+
 I've been working with Ruby for 10+ years. It is elegant, flexible, powerful, and kind. Some other languages I've used are Java, PHP, Python and JavaScript.
 I think if you are new to programming it _is_ a good first language to learn and I will try to explain why.
 
