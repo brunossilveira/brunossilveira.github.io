@@ -1,7 +1,7 @@
 ---
 layout: blog
 title:  "Is Ruby a good first language to learn?"
-date:   2022-01-09
+date:   2022-02-18
 categories: ruby
 ---
 
