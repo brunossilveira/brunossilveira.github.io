@@ -7,7 +7,8 @@ categories: rails
 
 # Should you use ActiveRecord validations or database constraints?
 
-When I was starting learning Ruby on Rails one of the things I enjoyed the most about the framework was the fact that it was super quick and easy to get a form nicely done, with good error messages and all. All I had to do is to use some methods on my ActiveRecord model and voilá, it would just work! Because AR validations were so powerful I basically ignored database constraints. As I learned more about Ruby on Rails and web development in general I learned when and where to use the different tools available to me.
+When I was starting learning Ruby on Rails one of the things I enjoyed the most about the framework was the fact that it was super quick and easy to get a form nicely done, with good error messages and all. All I had to do is to use some methods on my ActiveRecord model and voilá, it would just work!
+Because AR validations were so powerful I basically ignored database constraints. As I learned more about Ruby on Rails and web development in general I learned when and where to use the different tools available to me.
 
 In this post I will try to explain more about what are the differences between both things to hopefully help you understand when to use one, the other or both.
 
