@@ -93,7 +93,7 @@ Now imagine that you have two different requests that are trying to save the sam
 That is, very simply put, what a race condition is. You can learn more about that [here](https://karolgalanciak.com/blog/2020/06/07/race-conditions-on-rails/).
 
 As you could see, ActiveRecord alone won't prevent bad data from being written if there is a race condition.
-If you add a database constraint, because a transactions to the same table will happen one at a time, the second time you try to write the duplicate email to the database, it will throw an error message and prevent it from happening.
+If you add a database constraint, because transactions to the same table will happen one at a time, the second time you try to write the duplicate email to the database, it will throw an error message and prevent it from happening.
 
 ### External clients
 
