@@ -85,7 +85,9 @@ end
 Now imagine that you have two different requests that are trying to save the same email to the database and those requests happened in two different processes at the _exact same time_. This is what will happen:
 
 1 - Both requests will come through and try to write to the database concurrently;
+
 2 - ActiveRecord will run the email validation for both requests, however because there isn't an email already on the database the validation will pass;
+
 3 - The request will finish and save both records with the same email to the db.
 
 That is, very simply put, what a race condition is. You can learn more about that [here](https://karolgalanciak.com/blog/2020/06/07/race-conditions-on-rails/).
