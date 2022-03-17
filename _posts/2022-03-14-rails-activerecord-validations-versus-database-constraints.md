@@ -101,7 +101,7 @@ This is not very common in most Ruby on Rails applications, but sometimes there 
 
 ## When to skip database constraints
 
-If you are prototyping, sometimes restricting the database with constraints can get it your way. For the sake of speed I find it okay to skip db constraints in this case.
+If you are prototyping, sometimes restricting the database with constraints can get in your way. For the sake of speed I find it okay to skip db constraints in this case.
 
 ## Conclusion
 
