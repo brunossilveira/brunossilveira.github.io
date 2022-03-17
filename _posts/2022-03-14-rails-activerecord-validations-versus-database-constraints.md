@@ -7,7 +7,7 @@ categories: rails
 
 # Should you use ActiveRecord validations or database constraints?
 
-When I was starting learning Ruby on Rails one of the things I enjoyed the most about the framework was the fact that it was super quick and easy to get a form nicely done, with good error messages and all. All I had to do is to use some methods on my ActiveRecord model and voila, it would just work!
+When I was starting learning Ruby on Rails one of the things I enjoyed the most about the framework was the fact that it was super quick and easy to get a form nicely done, with good error messages and all. All I had to do is to use some methods on my ActiveRecord model and voilà, it would just work!
 Because AR validations were so powerful I basically ignored database constraints. As I learned more about Ruby on Rails and web development in general I learned when and where to use the different tools available to me.
 
 In this post I will try to explain more about what are the differences between both things to hopefully help you understand when to use one, the other or both.
@@ -63,7 +63,7 @@ end
 
 ## Database Constraints
 
-So now you must be thinking: Why should I care about database constraints? ActiveRecord models will make sure the application saves only correct data plus I get nice error messages and customizations.
+So now you must be thinking: Why should I care about database constraints? ActiveRecord models will make sure the application saves only correct data plus I get good error messages and customizations.
 Well... Not really. For a few reasons:
 
 ### Data consistency
@@ -97,7 +97,7 @@ If you add a database constraint, because transactions to the same table will ha
 
 ### External clients
 
-This is not very common in most Ruby on Rails applications but sometimes there are other clients writing to the database other than ActiveRecord models. This is yet another reason why you should always use database constraints to make sure the data is consistent.
+This is not very common in most Ruby on Rails applications, but sometimes there are other clients writing to the database other than ActiveRecord models. This is yet another reason why you should always use database constraints to make sure the data is consistent.
 
 ## When to skip database constraints
 
