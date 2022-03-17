@@ -3,6 +3,7 @@ layout: blog
 title:  "Fixing jekyll serve on Ruby 3"
 date:   2022-01-09
 categories: ruby
+slug: fix-jekyll-serve-error
 ---
 
 # Fixing jekyll serve command on Ruby 3

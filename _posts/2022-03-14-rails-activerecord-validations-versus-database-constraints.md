@@ -3,6 +3,7 @@ layout: blog
 title:  "Should you use ActiveRecord validations or database constraints?"
 date:   2022-03-14
 categories: rails
+slug: rails-activerecord-database-constraints
 ---
 
 # Should you use ActiveRecord validations or database constraints?

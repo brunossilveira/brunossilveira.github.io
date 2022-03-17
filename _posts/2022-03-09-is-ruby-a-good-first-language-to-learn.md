@@ -3,6 +3,7 @@ layout: blog
 title:  "Is Ruby a good first language to learn?"
 date:   2022-02-18
 categories: ruby
+slug: ruby-good-first-language-learn
 ---
 
 # Is Ruby a good first language to learn?
